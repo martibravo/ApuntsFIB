@@ -1,0 +1,136 @@
+\documentclass[12pt, a4paper, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[catalan]{babel}
+\usepackage[a4paper, portrait, margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{\baselineskip}
+
+
+\title{Física}
+\author{Martí Bravo Navarro}
+\date{Quadrimestre de primavera 2021}
+
+\pagestyle{headings}
+\begin{document}
+\begin{titlepage}
+	\centering
+	\vspace*{\baselineskip} 
+    {\scshape Universitat Politècnica de Catalunya}
+    \vspace{0.25\baselineskip}
+
+    {\scshape\Large Facultat d'Informàtica de Barcelona}
+	\vspace{10\baselineskip}
+
+    \textbf{\Large Apunts}
+    \vspace{0.75\baselineskip}
+
+	{\LARGE FÍSICA\\}
+
+	\vspace{0.75\baselineskip}
+	\vspace{10\baselineskip}
+    Quadrimestre de Primavera 2021
+	\vspace*{3\baselineskip} 
+
+    \textit{per}
+	\vspace{0.5\baselineskip}
+	{\scshape\Large Martí Bravo Navarro}
+	\vspace{0.5\baselineskip}
+	\vfill
+	
+
+\end{titlepage}
+
+\section*{Avaluació}
+\begin{itemize}
+    \item \textbf{Teoria} --- 90\%
+    \begin{itemize}
+        \item Els parcials es poden reeditar al final, que consta de dues parts, una corresponent a cada parcial. 
+            \item \textbf{45\%} Parcial 1 / Final 1
+        \begin{itemize}
+            \item Temes 1 i 2. Corrent Continu i Corrent Altern
+        \end{itemize}
+        \item \textbf{45\%} Parcial 2 / Final 2
+        \begin{itemize}
+            \item Temes 3 i 4. Electrònica, portes lògiques i ones.     
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Laboratoris}   --- 10\% --- 5 laboratoris + Presentació
+    \begin{itemize}
+        \item \textbf{7,5\%} Mitja de totes les pràctiques
+        \begin{itemize}
+            \item Treball previ a cada laboratori
+            \item Cal anar al laboratori
+            \item Informe final entregat al Racó.
+        \end{itemize}
+        \item \textbf{2,5\%} Presentació oral sobre una pràctica. 
+        
+    \end{itemize}
+  \end{itemize}
+
+\section*{Altres}
+\subsection*{Tallers}
+Abans de cada final es faran tallers voluntaris i presencials per preguntar dubtes als professors. 
+
+\chapter{Corrent continu}
+\section{Càrrega elèctrica}
+
+La càrrega elèctrica \(q\) o \(Q\)  és una propietat dels objectes que presenten interaccions elèctriques.
+Si un objecte té interaccions elèctriques té càrrega elèctrica.
+Una càrrega pot ser \textbf{positiva o negativa}
+Les interaccions elèctriques poden ser:
+\begin{itemize}
+    \item Atractives. Hi intervenen càrregues de signe contrari.
+    \item Repulsives. Les càrregues són de mateix signe.
+\end{itemize} 
+
+La càrrega \textbf{està quantitzada} (\(q = \pm Ne\)).
+
+La càrrega \textbf{es conserva}. Dues molècules amb \(q_1, q_2\) interaccionen i acaben amb càrregues \(q_1', q_2'\), on la suma de càrrega als dos casos és la mateixa.
+
+La càrrega d'un electró és \(q_e = -e \), on \(e = 1,6 * 10^-19 \))
+
+\section{Camp elèctric i potencial}
+Camp elèctric: \overrightarrow{E}
+Potencial elèctric: \(V\) 
+
+Les interaccions electrostàtiques són forces a distància.
+$$ q \rightarrow \overrightarrow{F} \equiv q \rightarrow \overrightarrow{F} $$
+$$\overrightarrow{F} =  q \overrightarrow{E} \Longrightarrow \overrightarrow{E} = \frac{\overrightarrow{F}}{q} $$
+$$ q = 1C \rightarrow \overrightarrow{E} = \overrightarrow{F}$$ en Newtons/Coloumb
+
+Les interaccions electrostàtiques són forces conservatives. 
+Energia potencial electrostàtica \(u\), unitats en Joule, \(J\). 
+\(u \equiv\) treball necessari per traslladar \(u\) a aquest punt. 
+
+$$ U \equiv qV \longrightarrow V = \frac{U}{q} $$
+
+V \(\longrightarrow\) unitats en Volts, V. \(1V = \frac{1J}{1C}\)
+
+\section{Corrent elèctric. Intensitat.}
+El flux o moviment de càrregues elèctriques en un medi. \textbf{Exemple:} Corrent elèctric en un fil conductor (de coure Cu) amb una secció \(S\)
+$$I = \frac{dQ}{dt}$$
+En Amperes, A. \(1A = \frac{1C}{s}\)
+
+La Intensitat \(I\) també és la càrrega que travessa una secció S per unitat de temps. 
+
+Càrregues en moviment
+\begin{itemize}
+    \item \(q\): càrrega d'un portador
+    \item \(\mathcal{V}_d\): velocitat de deriva
+    \item \(n\): densitat de portadors de càrrega
+    \item \mu mobilitat de les càrregues en el material. 
+\end{itemize}
+$$dQ = (n \ S  \ \mathcal{V}_d \ dt) \longrightarrow I = | q \vert \ n \ S  \ \mathcal{V}_d  $$
+$$ \overrightarrow{\mathcal{V}_d} = \pm \mu \overrightarrow{E} $$ 
+\subsubsection{Densitat de corrent \textbf{J}}
+\begin{itemize}
+    \item Si \(q > 0\), \overrightarrow{d} té mateix sentit que la velocitat de deriva. \overrightarrow{F} mateix sentit que \overrightarrow{E}. 
+    \item Si \(q < 0\), \overrightarrow{d} té sentit contrari que la velocitat de deriva. \overrightarrow{F} sentit contrari que \overrightarrow{E}
+\end{itemize}
+$$J = \frac{I}{S} = | q \vert \ n \ \mathcal{V}_d \ \ \overrightarrow{J} = q \ n \ \overrightarrow{\mathcal{V}_d}$$
+\chapter{Corrent altern}
+\chapter{Electrònica i portes lògiques}
+\chapter{Ones}
+\end{document}
